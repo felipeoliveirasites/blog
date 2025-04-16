@@ -12,7 +12,7 @@ function contarTempo(string $data)
     $diferenca = $agora - $tempo;
     echo '<br>'.$diferenca;
     echo "<br>";
-    return var_dump($data);
+    return var_dump($agora, $tempo, $diferenca);
 }
 
 echo "<br>";

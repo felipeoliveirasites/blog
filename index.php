@@ -7,7 +7,7 @@ require_once 'sistema/configuracao.php';
 include_once 'Helpers.php';
 /* date_default_timezone_set("America/Sao_Paulo"); */
 
-contarTempo('2017-04-13 23:30:15');
+contarTempo('2025-04-14 23:30:15');
 
 $data = date('d/m/Y H:i:s');
 echo '<hr>'.$data;
