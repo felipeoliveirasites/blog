@@ -2,6 +2,20 @@
 
 echo '<br>arquivo de funções';
 
+function localhost(): bool
+{
+    
+    $servidor = filter_input(INPUT_SERVER,"SERVER_NAME", FILTER_DEFAULT);
+    var_dump($servidor);
+    var_dump(INPUT_SERVER);
+    if($servidor == 'localhost'){
+        return true;
+    }else{
+        return false;
+    }
+        
+}
+
 echo "<hr>";
 function contarTempo(string $data) 
 {

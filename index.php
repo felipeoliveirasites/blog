@@ -2,10 +2,23 @@
 //Arquivo index responsável pela inicialização do sistema
 //declare(strict_types = 1);
 
-
 require_once 'sistema/configuracao.php';
 include_once 'Helpers.php';
 /* date_default_timezone_set("America/Sao_Paulo"); */
+
+
+if (in_array('mbstring', get_loaded_extensions())) {
+    echo "A extensão mbstring está habilitada.";
+} else {
+    echo "A extensão mbstring NÃO está habilitada.";
+}
+
+
+//var_dump($_SERVER);
+echo "<hr>";
+
+var_dump(localhost());
+echo "<hr>";
 
 contarTempo('2025-04-14 23:30:15');
 
