@@ -14,7 +14,7 @@ if (in_array('mbstring', get_loaded_extensions())) {
 }
 
 
-//var_dump($_SERVER);
+var_dump(localhost());
 echo "<hr>";
 
 var_dump(localhost());
